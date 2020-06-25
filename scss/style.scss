@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 div {
     background: yellow
+=======
+@import 'block/head.scss';
+
+
+div {
+    @include sof_lig;
+>>>>>>> module-1
 }
