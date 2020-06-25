@@ -1,3 +1,8 @@
-body {
-  background: green;
+@import url(/css/fonts.css);
+
+div {
+  font-family: 'sofia_prolight';
 }
+@import url(/css/fonts.css);
+@import url(/css/fonts.css);
+
