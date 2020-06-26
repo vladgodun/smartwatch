@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+.header {
+
+    &_menu {}
+
+    &_nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 45px 0 15px;
+
+        &-link {
+            color: $primarySilver;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        :hover {
+            color: $primaryDark;
+        }
+
+
+    }
+}

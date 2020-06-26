@@ -1,0 +1,18 @@
+
+
+.header_nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 45px 0 15px;
+}
+
+.header_nav-link {
+  color: #717171;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header_nav :hover {
+  color: #000000;
+}
