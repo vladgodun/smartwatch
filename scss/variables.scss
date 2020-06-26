@@ -1,12 +1,11 @@
-$bg_white:#f0eeee;
-$bg_silver:#eaeaea;
-$bg_black:#000000;
-$txt_robot:'Roboto',
+$primaryLight:#f0eeee;
+$secondSilverr:#eaeaea;
+$primaryDark:#000000;
+$txt_font:'Roboto',
 sans-serif;
 
-$media:screen;
-$width:max-width;
-$value_desktop:1200px;
-$value_tablet:991px;
-$value_phablet:768px;
-$value_mobile:480px;
+
+$breakpoint_desktop:1200px;
+$breakpoint_tabletLandscape:991px;
+$breakpoint_tabletPortrait:768px;
+$breakpoint_mobile:480px;
