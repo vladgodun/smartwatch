@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.header {
+  border-bottom: 1px solid #beb6b6;
+}
 
 .header__menu {
   display: flex;
@@ -34,4 +41,13 @@
   background: #717171;
   width: auto;
   height: 1px;
+}
+
+#search {
+  width: 100px;
+  padding-top: 8px;
+}
+
+.search__button {
+  padding: 0;
 }

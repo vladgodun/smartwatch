@@ -2,11 +2,14 @@
 
 
 .header {
+
+
     &__menu {
         display: flex;
         justify-content: space-around;
         width: 100%;
         padding: 12px 0 15px;
+
     }
 
     &__nav {
@@ -39,5 +42,19 @@
         width: auto;
         height: 1px;
 
+    }
+
+    border-bottom: 1px solid $primaryLightSilver;
+}
+
+#search {
+    width: 100px;
+    padding-top: 8px;
+
+}
+
+.search {
+    &__button {
+        padding: 0;
     }
 }
