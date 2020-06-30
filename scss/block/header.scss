@@ -2,38 +2,42 @@
 
 
 .header {
-
-
     &__menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
-        padding: 12px 0 15px;
-
+        padding: 23px 0 12px;
+        border-bottom: 1px solid $primaryLightSilver;
     }
 
     &__nav {
         display: flex;
-        justify-content: space-around;
-        width: 90%;
+        justify-content: center;
+        width: 100%;
 
+
+        :nth-child(2n) {
+            padding: 0 86px;
+        }
 
         &-link {
             color: $primarySilver;
             text-decoration: none;
             display: flex;
-            // justify-content: space-around;
             align-items: center;
+            font: 12px $txtFont;
         }
 
         :hover {
             color: $primaryDark;
+
         }
     }
 
     &__search {
-        width: 20px;
+        width: 100%;
         height: 20px;
+        opacity: 0;
     }
 
     &__line {
@@ -41,20 +45,41 @@
         background: $primarySilver;
         width: auto;
         height: 1px;
-
     }
 
-    border-bottom: 1px solid $primaryLightSilver;
-}
 
-#search {
-    width: 100px;
-    padding-top: 8px;
+    &__form {
+        display: flex;
 
-}
+        &-button {
+            margin-left: 10px;
+            margin-top: 10px;
+            border: none;
+            background: none;
 
-.search {
-    &__button {
-        padding: 0;
+            &-serch {
+                width: 100px;
+                transform: translateX(100px);
+                position: relative;
+                z-index: 1;
+                opacity: 0;
+            }
+
+            &-serch:focus {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            &-serch:focus+button {
+                pointer-events: auto;
+            }
+
+            img {
+                padding: 0;
+                width: 18px;
+                height: 14px;
+
+            }
+        }
     }
 }
