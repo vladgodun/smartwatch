@@ -1,24 +1,19 @@
-@import '../variables.scss';
-
+@import "../variables.scss";
 
 .header {
     &__menu {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 23px 0 12px;
+        padding: 23px 0 14px;
         border-bottom: 1px solid $primaryLightSilver;
     }
 
     &__nav {
         display: flex;
         justify-content: center;
+
         width: 100%;
-
-
-        :nth-child(2n) {
-            padding: 0 86px;
-        }
 
         &-link {
             color: $primarySilver;
@@ -26,11 +21,11 @@
             display: flex;
             align-items: center;
             font: 12px $txtFont;
+            padding-left: 88px;
         }
 
         :hover {
             color: $primaryDark;
-
         }
     }
 
@@ -47,19 +42,21 @@
         height: 1px;
     }
 
-
     &__form {
         display: flex;
 
+        &-img {
+            padding-top: 9px;
+        }
+
         &-button {
-            margin-left: 10px;
-            margin-top: 10px;
+            width: 25px;
             border: none;
             background: none;
 
             &-serch {
-                width: 100px;
-                transform: translateX(100px);
+                width: 108px;
+                transform: translateX(108px);
                 position: relative;
                 z-index: 1;
                 opacity: 0;
@@ -72,13 +69,6 @@
 
             &-serch:focus+button {
                 pointer-events: auto;
-            }
-
-            img {
-                padding: 0;
-                width: 18px;
-                height: 14px;
-
             }
         }
     }
