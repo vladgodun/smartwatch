@@ -12,8 +12,8 @@
     &__nav {
         display: flex;
         justify-content: center;
-
         width: 100%;
+
 
         &-link {
             color: $primarySilver;
@@ -27,7 +27,24 @@
         :hover {
             color: $primaryDark;
         }
+
+        &-active {
+            color: #000000;
+            align-items: center;
+            flex-direction: column;
+            align-self: flex-end;
+        }
+
+        &-active::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: #bbb;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
     }
+
 
     &__search {
         width: 100%;
@@ -35,12 +52,7 @@
         opacity: 0;
     }
 
-    &__line {
-        display: "";
-        background: $primarySilver;
-        width: auto;
-        height: 1px;
-    }
+
 
     &__form {
         display: flex;
