@@ -15,7 +15,7 @@
         width: 100%;
 
 
-        &-link {
+        &_link {
             color: $primarySilver;
             text-decoration: none;
             display: flex;
@@ -28,60 +28,60 @@
             color: $primaryDark;
         }
 
-        &-active {
-            color: #000000;
+        &_active {
+            color: $primaryDark;
             align-items: center;
             flex-direction: column;
             align-self: flex-end;
         }
 
-        &-active::after {
+        &_active::after {
             content: "";
             width: 5px;
             height: 5px;
-            background: #bbb;
+            background-color: $primaryCircleSilever;
             border-radius: 50%;
             margin-top: 6px;
         }
     }
+}
+
+form {
+    display: flex;
+}
+
+.form {
 
 
-    &__search {
-        width: 100%;
-        height: 20px;
+    &_serch {
+        border-color: $primaryPaleGreen;
+        border-radius: 50px;
+        width: 108px;
+        transform: translateX(108px);
+        position: relative;
+        z-index: 1;
         opacity: 0;
+        transition: 3s;
     }
 
+    &_serch:focus {
+        transform: translateX(-28px);
+        opacity: 1;
+        outline: none;
 
+    }
 
-    &__form {
-        display: flex;
+    &_serch:focus+button {
+        pointer-events: auto;
+    }
 
-        &-img {
-            padding-top: 9px;
-        }
+    &_button {
+        width: 25px;
+        border: none;
+        background: none;
+    }
 
-        &-button {
-            width: 25px;
-            border: none;
-            background: none;
-
-            &-serch {
-                width: 108px;
-                transform: translateX(108px);
-                position: relative;
-                z-index: 1;
-                opacity: 0;
-            }
-
-            &-serch:focus {
-                transform: translateX(0);
-                opacity: 1;
-            }
-
-            &-serch:focus+button {
-                pointer-events: auto;
-            }
-        }
+    &_img {
+        padding-top: 9px;
     }
 }
