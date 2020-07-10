@@ -1,4 +1,6 @@
 @import "../variables.scss";
+@import "./nav.scss";
+@import "./search.scss";
 
 .header {
     &__menu {
@@ -7,82 +9,5 @@
         width: 100%;
         padding: 23px 0 14px;
         border-bottom: 1px solid $primaryLightSilver;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: center;
-
-        &__link {
-            color: $primarySilver;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            font: 12px $txtFont;
-            padding-left: 88px;
-            position: relative;
-
-            &_active {
-                color: $primaryDark;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                font: 12px $txtFont;
-                padding-left: 88px;
-                position: relative;
-            }
-
-            &_active::after {
-                position: absolute;
-                content: "";
-                width: 5px;
-                height: 5px;
-                background-color: $primaryCircleSilver;
-                border-radius: 50%;
-                margin-top: 6px;
-                bottom: 2%;
-                left: 81%;
-            }
-        }
-
-        :hover {
-            color: $primaryDark;
-        }
-    }
-
-    .search__form {
-        display: flex;
-
-        &_serch {
-            border-color: $primaryCircleSilver;
-            border-radius: 50px;
-            width: $widthString;
-            transform: translateX($widthString);
-            position: relative;
-            z-index: 1;
-            opacity: 0;
-            transition: 0.5s;
-        }
-
-        &_serch:focus {
-            transform: translateX(-28px);
-            opacity: 1;
-            outline: none;
-
-        }
-
-        &_serch:focus+button {
-            pointer-events: auto;
-        }
-
-        &_button {
-            width: 25px;
-            border: none;
-            background: none;
-        }
-
-        &_img {
-            padding-top: 9px;
-        }
     }
 }
