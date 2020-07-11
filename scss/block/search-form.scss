@@ -13,17 +13,15 @@
         opacity: 0;
         transition: 0.5s;
 
-    }
+        &:focus {
+            transform: translateX(-28px);
+            opacity: 1;
+            outline: none;
+        }
 
-    &__input:focus {
-        transform: translateX(-28px);
-        opacity: 1;
-        outline: none;
-
-    }
-
-    &__input:focus+button {
-        pointer-events: auto;
+        &:focus+button {
+            pointer-events: auto;
+        }
     }
 
     &__button {

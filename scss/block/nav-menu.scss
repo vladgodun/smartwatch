@@ -1,10 +1,10 @@
 @import "../variables.scss";
 
 .nav-menu {
-    &__actives {
-        display: flex;
-        justify-content: center;
-    }
+
+    display: flex;
+    justify-content: center;
+
 
     &__link {
         color: $primarySilver;
@@ -15,6 +15,10 @@
         padding-left: 88px;
         position: relative;
 
+        &:hover {
+            color: $primaryDark;
+        }
+
         &_active {
             color: $primaryDark;
             text-decoration: none;
@@ -23,22 +27,19 @@
             font: 12px $txtFont;
             padding-left: 88px;
             position: relative;
+
+            &:after {
+                position: absolute;
+                content: "";
+                width: 5px;
+                height: 5px;
+                background-color: $primaryCircleSilver;
+                border-radius: 50%;
+                margin-top: 6px;
+                bottom: 2%;
+                left: 81%;
+            }
         }
 
-        &_active::after {
-            position: absolute;
-            content: "";
-            width: 5px;
-            height: 5px;
-            background-color: $primaryCircleSilver;
-            border-radius: 50%;
-            margin-top: 6px;
-            bottom: 2%;
-            left: 81%;
-        }
-    }
-
-    :hover {
-        color: $primaryDark;
     }
 }
