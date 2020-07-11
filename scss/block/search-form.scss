@@ -17,10 +17,10 @@
             transform: translateX(-28px);
             opacity: 1;
             outline: none;
-        }
 
-        &:focus+button {
-            pointer-events: auto;
+            &+button {
+                pointer-events: auto;
+            }
         }
     }
 
@@ -33,5 +33,4 @@
     &__img {
         padding-top: 9px;
     }
-
 }
