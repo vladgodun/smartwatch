@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.search-form {
+    display: flex;
+
+    &__input {
+        border-color: $primaryCircleSilver;
+        border-radius: 50px;
+        width: $widthStringInput;
+        transform: translateX($widthStringInput);
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.5s;
+
+        &:focus {
+            transform: translateX(-28px);
+            opacity: 1;
+            outline: none;
+
+            &+button {
+                pointer-events: auto;
+            }
+        }
+    }
+
+    &__button {
+        width: 25px;
+        border: none;
+        background: none;
+    }
+
+    &__img {
+        padding-top: 9px;
+    }
+}
