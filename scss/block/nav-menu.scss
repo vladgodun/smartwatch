@@ -1,10 +1,8 @@
 @import "../variables.scss";
 
 .nav-menu {
-
     display: flex;
     justify-content: center;
-
 
     &__link {
         color: $primarySilver;
@@ -21,12 +19,7 @@
 
         &_active {
             color: $primaryDark;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            font: 12px $txtFont;
-            padding-left: 88px;
-            position: relative;
+
 
             &:after {
                 position: absolute;

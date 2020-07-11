@@ -24,12 +24,6 @@
 
 .nav-menu__link_active {
   color: #000000;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  font: 12px "Roboto", sans-serif;
-  padding-left: 88px;
-  position: relative;
 }
 
 .nav-menu__link_active:after {
@@ -107,12 +101,6 @@
 
 .nav-menu__link_active {
   color: #000000;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  font: 12px "Roboto", sans-serif;
-  padding-left: 88px;
-  position: relative;
 }
 
 .nav-menu__link_active:after {
