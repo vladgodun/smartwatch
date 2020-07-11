@@ -1,8 +1,10 @@
 @import "../variables.scss";
 
 .nav-menu {
-    display: flex;
-    justify-content: center;
+    &__actives {
+        display: flex;
+        justify-content: center;
+    }
 
     &__link {
         color: $primarySilver;

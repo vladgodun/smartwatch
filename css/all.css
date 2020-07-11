@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.nav-menu {
+.nav-menu__actives {
   display: flex;
   justify-content: center;
 }
@@ -86,7 +86,7 @@
   padding: 23px 0 14px;
   border-bottom: 1px solid #beb6b6;
 }
-.nav-menu {
+.nav-menu__actives {
   display: flex;
   justify-content: center;
 }
