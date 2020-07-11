@@ -1,9 +1,9 @@
 @import "../variables.scss";
 
-.search__form {
+.search-form {
     display: flex;
 
-    &_serch {
+    &__input {
         border-color: $primaryCircleSilver;
         border-radius: 50px;
         width: $widthStringInput;
@@ -12,26 +12,28 @@
         z-index: 1;
         opacity: 0;
         transition: 0.5s;
+
     }
 
-    &_serch:focus {
+    &__input:focus {
         transform: translateX(-28px);
         opacity: 1;
         outline: none;
 
     }
 
-    &_serch:focus+button {
+    &__input:focus+button {
         pointer-events: auto;
     }
 
-    &_button {
+    &__button {
         width: 25px;
         border: none;
         background: none;
     }
 
-    &_img {
+    &__img {
         padding-top: 9px;
     }
+
 }

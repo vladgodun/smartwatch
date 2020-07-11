@@ -3,12 +3,12 @@
   margin: 0 auto;
 }
 
-.nav {
+.nav-menu {
   display: flex;
   justify-content: center;
 }
 
-.nav__link {
+.nav-menu__link {
   color: #717171;
   text-decoration: none;
   display: flex;
@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.nav__link_active {
+.nav-menu__link_active {
   color: #000000;
   text-decoration: none;
   display: flex;
@@ -28,7 +28,7 @@
   position: relative;
 }
 
-.nav__link_active::after {
+.nav-menu__link_active::after {
   position: absolute;
   content: "";
   width: 5px;
@@ -40,15 +40,15 @@
   left: 81%;
 }
 
-.nav :hover {
+.nav-menu :hover {
   color: #000000;
 }
 
-.search__form {
+.search-form {
   display: flex;
 }
 
-.search__form_serch {
+.search-form__input {
   border-color: #bbb;
   border-radius: 50px;
   width: 108px;
@@ -59,23 +59,23 @@
   transition: 0.5s;
 }
 
-.search__form_serch:focus {
+.search-form__input:focus {
   transform: translateX(-28px);
   opacity: 1;
   outline: none;
 }
 
-.search__form_serch:focus + button {
+.search-form__input:focus + button {
   pointer-events: auto;
 }
 
-.search__form_button {
+.search-form__button {
   width: 25px;
   border: none;
   background: none;
 }
 
-.search__form_img {
+.search-form__img {
   padding-top: 9px;
 }
 
@@ -86,12 +86,12 @@
   padding: 23px 0 14px;
   border-bottom: 1px solid #beb6b6;
 }
-.nav {
+.nav-menu {
   display: flex;
   justify-content: center;
 }
 
-.nav__link {
+.nav-menu__link {
   color: #717171;
   text-decoration: none;
   display: flex;
@@ -101,7 +101,7 @@
   position: relative;
 }
 
-.nav__link_active {
+.nav-menu__link_active {
   color: #000000;
   text-decoration: none;
   display: flex;
@@ -111,7 +111,7 @@
   position: relative;
 }
 
-.nav__link_active::after {
+.nav-menu__link_active::after {
   position: absolute;
   content: "";
   width: 5px;
@@ -123,14 +123,14 @@
   left: 81%;
 }
 
-.nav :hover {
+.nav-menu :hover {
   color: #000000;
 }
-.search__form {
+.search-form {
   display: flex;
 }
 
-.search__form_serch {
+.search-form__input {
   border-color: #bbb;
   border-radius: 50px;
   width: 108px;
@@ -141,22 +141,22 @@
   transition: 0.5s;
 }
 
-.search__form_serch:focus {
+.search-form__input:focus {
   transform: translateX(-28px);
   opacity: 1;
   outline: none;
 }
 
-.search__form_serch:focus + button {
+.search-form__input:focus + button {
   pointer-events: auto;
 }
 
-.search__form_button {
+.search-form__button {
   width: 25px;
   border: none;
   background: none;
 }
 
-.search__form_img {
+.search-form__img {
   padding-top: 9px;
 }
