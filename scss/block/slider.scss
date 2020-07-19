@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+.slider {
+    text-align: center;
+
+    &__txthead {
+
+        font-size: 71px;
+        margin: 0;
+        padding: 80px 0 13px 0;
+        font-family: $txtFontLorem;
+        font-weight: 700;
+    }
+
+    &__txtlast {
+        margin: 0;
+        font-size: 14.2px;
+        font-family: $txtFontLorem;
+    }
+
+    &__button {
+        cursor: pointer;
+        margin: 29px 0;
+        border: 1px solid $primaryBlue;
+        color: $primaryBlue;
+        padding: 4px 7px 4px 15px;
+        font: 12px $txtFontLorem;
+
+    }
+
+    &__img {
+        padding-right: 7px;
+    }
+
+
+    &__arrow {
+        position: relative;
+
+        &_right {
+            position: absolute;
+            right: 90px;
+            top: 70px;
+        }
+
+        &_left {
+
+            position: absolute;
+            left: 110px;
+            top: 70px;
+        }
+    }
+}

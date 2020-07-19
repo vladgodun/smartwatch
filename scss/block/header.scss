@@ -1,5 +1,5 @@
 @import "../variables.scss";
-@import "./background-page.scss";
+@import "../style.scss";
 @import "./nav-menu.scss";
 @import "./search-form.scss";
 
@@ -10,8 +10,17 @@
     &__menu {
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        padding: 31px 0 14px;
+
+        padding: 32px 0 15px 15px;
         border-bottom: 1px solid $primaryLightSilver;
+    }
+
+    &__background {
+        width: 100%;
+
+        &_page {
+            background-color: $primaryBackgoundBody;
+
+        }
     }
 }
