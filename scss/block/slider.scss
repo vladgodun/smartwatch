@@ -6,6 +6,13 @@
     &__head {
         text-align: center;
         font-family: $txtFontLorem;
+
+
+
+        &_background {
+            width: 100%;
+            background-color: $primaryBackgroundBody;
+        }
     }
 
     &__txthead {
@@ -40,54 +47,50 @@
 
     &__arrow {
         position: relative;
+        background: none;
+        border-style: none;
 
         &_right {
-            width: 6vmin;
-            height: 6vmin;
-            box-sizing: border-box;
+            width: $widthArrowRight;
+            height: $heightArrowRight;
             position: absolute;
-            top: 82px;
-            right: 75px;
+            top: 67px;
+            right: 60px;
 
             transform: rotate(45deg);
 
             &::before {
                 content: '';
-                width: 25%;
-                height: 25%;
-                border-width: .2vmin .2vmin 0 0;
-                border-style: solid;
-                border-color: #050505;
-                transition: .2s ease;
-                display: block;
-                transform-origin: 100% 0;
+                width: $beforeArrowWidthRight;
+                height: $beforeArrowHeightRight;
+                border-width: $beforeArrowBorderWidthRight;
+                border-style: $beforeArrowBorderStyleRight;
+                border-color: $primaryDarkArrow;
+                transition: $beforeArrowTransitionRight;
+                display: $beforeArrowDisplayRight;
+
             }
         }
 
         &_left {
-
-
-
-            width: 6vmin;
-            height: 6vmin;
-            box-sizing: border-box;
+            text-decoration: none;
+            width: $widthArrowLeft;
+            height: $heightArrowLeft;
             position: absolute;
-            top: 25px;
-
-            left: 90px;
-
+            top: 41px;
+            left: 70px;
             transform: rotate(-137deg);
 
             &::before {
                 content: '';
-                width: 25%;
-                height: 25%;
-                border-width: .2vmin .2vmin 0 0;
-                border-style: solid;
-                border-color: #050505;
-                transition: .2s ease;
-                display: block;
-                transform-origin: 100% 0;
+                width: $beforeArrowWidthLeft;
+                height: $beforeArrowHeightLeft;
+                border-width: $beforeArrowBorderWidthLeft;
+                border-style: $beforeArrowBorderStyleLeft;
+                border-color: $primaryDarkArrow;
+                transition: $beforeArrowTransitionLeft;
+                display: $beforeArrowDisplayLeft;
+
             }
         }
     }

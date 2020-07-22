@@ -195,6 +195,11 @@ body {
   font-family: "SofiaPro", sans-serif;
 }
 
+.slider__head_background {
+  width: 100%;
+  background-color: #f0eeee;
+}
+
 .slider__txthead {
   font-size: 71px;
   margin: 0;
@@ -222,15 +227,16 @@ body {
 
 .slider__arrow {
   position: relative;
+  background: none;
+  border-style: none;
 }
 
 .slider__arrow_right {
-  width: 6vmin;
-  height: 6vmin;
-  box-sizing: border-box;
+  width: 65px;
+  height: 55px;
   position: absolute;
-  top: 82px;
-  right: 75px;
+  top: 67px;
+  right: 60px;
   transform: rotate(45deg);
 }
 
@@ -238,21 +244,20 @@ body {
   content: '';
   width: 25%;
   height: 25%;
-  border-width: .2vmin .2vmin 0 0;
+  border-width: 0.2vmin 0.2vmin 0 0;
   border-style: solid;
   border-color: #050505;
-  transition: .2s ease;
+  transition: 0.2s ease;
   display: block;
-  transform-origin: 100% 0;
 }
 
 .slider__arrow_left {
-  width: 6vmin;
-  height: 6vmin;
-  box-sizing: border-box;
+  text-decoration: none;
+  width: 65px;
+  height: 55px;
   position: absolute;
-  top: 25px;
-  left: 90px;
+  top: 41px;
+  left: 70px;
   transform: rotate(-137deg);
 }
 
@@ -260,10 +265,9 @@ body {
   content: '';
   width: 25%;
   height: 25%;
-  border-width: .2vmin .2vmin 0 0;
+  border-width: 0.2vmin 0.2vmin 0 0;
   border-style: solid;
   border-color: #050505;
-  transition: .2s ease;
+  transition: 0.2s ease;
   display: block;
-  transform-origin: 100% 0;
 }
