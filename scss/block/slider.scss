@@ -1,8 +1,7 @@
 @import "../variables.scss";
 
+
 .slider {
-
-
     &__head {
         text-align: center;
         font-family: $txtFontLorem;
@@ -47,51 +46,41 @@
 
     &__arrow {
         position: relative;
+
+    }
+
+    &__buttons {
         background: none;
         border-style: none;
+        width: $ArrowWidth;
+        height: $ArrowHeight;
+
+
+        &::before {
+            content: '';
+            width: $ArrowWidthSize;
+            height: $ArrowHeightSize;
+            border-width: $ArrowBorderWidth;
+            border-style: $ArrowBorderStyle;
+            border-color: $primaryDarkArrow;
+            transition: $ArrowTransition;
+            display: $ArrowDisplay;
+        }
 
         &_right {
-            width: $widthArrowRight;
-            height: $heightArrowRight;
             position: absolute;
             top: 67px;
             right: 60px;
-
             transform: rotate(45deg);
-
-            &::before {
-                content: '';
-                width: $beforeArrowWidthRight;
-                height: $beforeArrowHeightRight;
-                border-width: $beforeArrowBorderWidthRight;
-                border-style: $beforeArrowBorderStyleRight;
-                border-color: $primaryDarkArrow;
-                transition: $beforeArrowTransitionRight;
-                display: $beforeArrowDisplayRight;
-
-            }
         }
 
         &_left {
-            text-decoration: none;
-            width: $widthArrowLeft;
-            height: $heightArrowLeft;
             position: absolute;
             top: 41px;
             left: 70px;
             transform: rotate(-137deg);
 
-            &::before {
-                content: '';
-                width: $beforeArrowWidthLeft;
-                height: $beforeArrowHeightLeft;
-                border-width: $beforeArrowBorderWidthLeft;
-                border-style: $beforeArrowBorderStyleLeft;
-                border-color: $primaryDarkArrow;
-                transition: $beforeArrowTransitionLeft;
-                display: $beforeArrowDisplayLeft;
 
-            }
         }
     }
 }
