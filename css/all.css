@@ -234,6 +234,7 @@ body {
   border-style: none;
   width: 65px;
   height: 55px;
+  position: absolute;
 }
 
 .slider__buttons::before {

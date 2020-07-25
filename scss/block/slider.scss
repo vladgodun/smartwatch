@@ -54,6 +54,7 @@
         border-style: none;
         width: $ArrowWidth;
         height: $ArrowHeight;
+        position: absolute;
 
 
         &::before {
