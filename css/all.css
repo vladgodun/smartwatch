@@ -249,14 +249,12 @@ body {
 }
 
 .slider__buttons_right {
-  position: absolute;
   top: 67px;
   right: 60px;
   transform: rotate(45deg);
 }
 
 .slider__buttons_left {
-  position: absolute;
   top: 41px;
   left: 70px;
   transform: rotate(-137deg);
