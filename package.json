@@ -12,11 +12,9 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-less": "^4.0.1",
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "gulp-group-css-media-queries": "^1.2.2",
-    "smart-grid": "^2.1.2"
+    "gulp-group-css-media-queries": "^1.2.2"
   }
 }

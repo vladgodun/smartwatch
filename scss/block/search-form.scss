@@ -2,6 +2,8 @@
 
 .search-form {
     display: flex;
+    width: 127px;
+    height: 30px;
 
     &__input {
         border-color: $primaryCircleSilver;
